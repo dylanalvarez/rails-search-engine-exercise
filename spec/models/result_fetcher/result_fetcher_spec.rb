@@ -106,7 +106,7 @@ describe ResultFetcher do
       expect(results.map(&:as_json)).to(
         eq(
           [
-            google_1_result, bing_1_result, google_2_result, bing_3_result, bing_4_result
+            bing_1_result, google_1_result, google_2_result, bing_3_result, bing_4_result
           ]
         )
       )
