@@ -27,6 +27,9 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem "google_search_results", "~> 2.2.0"
+gem "dotenv-rails", "~> 2.7.6"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -69,9 +72,10 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "webmock", "~> 3.14.0"
 end
 
 # Run against this stable release
 group :development, :test do
-  gem 'rspec-rails', '~> 5.1.2'
+  gem "rspec-rails", "~> 5.1.2"
 end

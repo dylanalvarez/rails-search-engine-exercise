@@ -12,5 +12,18 @@ Then run `gem install bundler -v 2.3.14` and `bundle install` to fetch dependenc
 
 Check that sqlite is installed: `sqlite3 --version` should return a version number. Otherwise, install it.
 
+Generate the env file: `cp .env.example .env`.
 
+Sign up on [SerpApi](https://serpapi.com/#pricing) (there's a free plan).
 
+Copy the API key and paste it as `SERPAPI_API_KEY` value in `.env`.
+
+## Run the server
+
+Run `rails server`
+
+## Test the search endpoint
+
+Search setting the `search_engine` to `google`, `bing` or `both` and `query` to the search query text.
+
+For example: http://localhost:3000/search?search_engine=bing&query=ruby%20on%20rails
